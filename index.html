@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="cora.png" type="image/x-icon">
+    <title>💕 Te amoooo 💕</title>
+    <style>
+        @keyframes cambioColor {
+            0% {color: red;}
+            50% {color: yellow;}
+            100% {color: purple;}
+        }
+
+        .titulo-intermitente {
+            font-family: 'Segoe Script', cursive;
+            font-size: 36px;
+            animation: cambioColor 3s infinite;
+            text-align: center;
+            cursor: pointer; /* Para que el cursor cambie al pasar por encima del título */
+        }
+
+        .mensaje-principal {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .Cina {
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .Cina:hover {
+            border: 2px solid pink;
+        }
+
+        .btn-tiamo {
+            display: none;
+        }
+
+        .mensaje-cina {
+            text-align: center;
+            font-style: italic;
+            color: gray;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Estilos para la notificación */
+        .mensaje-notificacion {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <audio id="audio" loop>
+        <source src="uwu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Función para iniciar la reproducción del audio
+        function iniciarAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            // Eliminar el evento clic para evitar múltiples reproducciones
+            document.removeEventListener("click", iniciarAudio);
+        }
+
+        // Agregar evento clic a todo el documento
+        document.addEventListener("click", iniciarAudio);
+
+        // Función para mostrar la notificación al cargar la página
+        window.onload = function() {
+            setTimeout(function() {
+                alert("💕 Presiona en algún lugar de la pantalla vacío 💕");
+            }, 500); // Muestra la notificación después de 2 segundos (2000 milisegundos)
+        }
+    </script>
+
+    <div class="container">
+        <img src="https://64.media.tumblr.com/ef0fda3f1fa4094a461f8fd529b17d18/40bd66a95cedc9c7-52/s2048x3072/58b57e4a94fcc93a3ddab9ec9127623abc52b22b.pnj" alt="" width="820px" >
+        <a href="corazonRegalo.html" target="_blank">
+            <img class="Cina" src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-1309.gif" alt="">
+            <p class="mensaje-cina">💕Presiona en el Cina💕</p>
+        </a>
+    </div>
+
+    <h1 class="titulo-intermitente" onclick="window.open('corazonRegalo.html', '_blank')">FELIZ MES MI VIDA</h1>
+    <p class="mensaje-cina">💕Presiona aqui tambien💕</p>
+    
+    <div class="conteudo-centralizado">
+        <p class="mensaje-principal">
+            💕 Mi amor 💕
+        </p>
+
+        <p class="mensaje-principal">
+            En tus cabellos negros se esconde la noche mas bella,
+        </p>
+        
+        <p class="mensaje-principal">
+            En tu pequeña estatura habita la mas increible grandeza,
+        </p>
+
+        <p class="mensaje-principal">
+            Eres lo más hermoso que mis ojos han visto,
+        </p>
+
+        <p class="mensaje-principal">
+            Durante mi adolescencia te conocí,
+        </p>
+
+        <p class="mensaje-principal">
+            Y desde entonces, en cada momento,
+        </p>
+
+        <p class="mensaje-principal">
+            Has sido la mujer de mis sueños,
+        </p>
+
+        <p class="mensaje-principal">
+            Anhelo casarme contigo, tenerte como mi compañera,
+        </p>
+
+        <p class="mensaje-principal">
+            Por siempre, mi amor por ti es eterno,
+        </p>
+
+        <p class="mensaje-principal">
+            Te amo, te adoro, eres mi vida entera.
+        </p>
+
+        <img src="https://64.media.tumblr.com/ef0fda3f1fa4094a461f8fd529b17d18/40bd66a95cedc9c7-52/s2048x3072/58b57e4a94fcc93a3ddab9ec9127623abc52b22b.pnj" alt="" width="820px" >
+    </div>
+</body>
+</html>
